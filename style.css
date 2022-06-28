@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    background-color: bisque;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    max-width: 1920px;
+    padding-left: 435px;
+    padding-right: 35px;
+}
+
+.header {
+    font-size: 32px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+li:hover{
+    color: aqua;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+}
