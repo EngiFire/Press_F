@@ -30,9 +30,11 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
+
+a{
+    text-decoration: none;
 }
+
 blockquote, q {
     quotes: none;
 }
@@ -74,7 +76,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 950px;
+    padding-left: 900px;
 }
 
 .nav-item{
@@ -106,4 +108,45 @@ body{
     /* border-bottom: 30px blue solid;
     width: 400px; */
     text-decoration: underline;
+}
+
+#about{
+    height: 100vh;
+}
+
+.title{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.about-text{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.bigger{
+ font-size: 20px;
+ font-weight: bolder;
+}
+
+ol{
+    font-size: 22px;
+    margin-left: 30px;
+}
+
+li{
+    margin-top: 12px;
+}
+
+.about-images{
+    display: flex;
+    margin-top: 25px;
+}
+
+.img1{
+    width: 800px;
+}
+
+.img2{
+    width: 650px;
 }
