@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-CSS RESET START
+/* CSS RESET START */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -51,7 +51,8 @@ table {
 /* CSS RESET END */
 
 body{
-    background-color: rgb(229, 189, 189);
+    background-color: rgb(229, 189, 189);  
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* .nav-menu{
@@ -67,7 +68,7 @@ body{
     height: 15vh;
     display: flex;
     flex-direction: row;
-    font-family:  'Montserrat', sans-serif;
+    justify-content: space-between;
 }
 
 .nav-menu{
@@ -76,7 +77,6 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 900px;
 }
 
 .nav-item{
@@ -90,6 +90,7 @@ body{
     width: 70px;
     background-image: url(./logo.svg);
     align-self: center;
+    background-repeat: no-repeat;
 }
 
 .van-bg{
@@ -102,9 +103,9 @@ body{
 
 .van-bg-text{
     font-size: 36px;
-    padding-top: 150px;
-    padding-left: 150px;
-    color: black;
+    padding-top: 125px;
+    padding-left: 125px;
+    /* color: black; */
     /* border-bottom: 30px blue solid;
     width: 400px; */
     text-decoration: underline;
@@ -121,7 +122,7 @@ body{
 
 .about-text{
     margin-top: 15px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .bigger{
@@ -149,4 +150,54 @@ li{
 
 .img2{
     width: 650px;
+}
+
+.nav-open{
+	display: none;
+}
+
+.burger-menu {
+	display: none;
+	margin-top: 15vh;
+	position: absolute;
+	width: 90vw;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	background-color: rgba(229, 189, 189);
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.opened{
+	display: flex;
+}
+
+@media (max-width:900px) {
+	.nav-item {
+		display: none;
+	}
+
+	.nav-open {
+		display: flex;
+	}
+
+	.van-bg-text {
+		font-size: 24px;
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+
+	.nav-menu {
+		justify-content: end;
+	}
+
+	.logo {
+		height: 50px;
+		width: 50px;
+	}
 }
