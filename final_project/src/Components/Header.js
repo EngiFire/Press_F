@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Navbar, NavbarBrand } from 'react-bootstrap';
+import { Container, Navbar, NavbarBrand, Nav} from 'react-bootstrap';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
 import logo from './logo1.png';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -12,7 +12,7 @@ export default class Header extends Component {
   render() {
     return (
       <>
-      <Navbar fixed='top' collapseOnSelect expand='md' bg='dark' variant='dark'>
+      <Navbar collapseOnSelect expand='md' bg='dark' variant='dark'>
         <Container>
           <NavbarBrand href='/'>
             <img
@@ -21,19 +21,24 @@ export default class Header extends Component {
               width='60'
               alt='Logo' />
           </NavbarBrand>
-          <Breadcrumb>
-            <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
+            <Nav className='mr-auto'>
+              <Nav.Link as={Link} to="/welcome" > Home </Nav.Link>
+              <Nav.Link as={Link} to="/stories" > Stories </Nav.Link>
+              <Nav.Link as={Link} to="/account" > Account </Nav.Link>
+            </Nav>
+          {/* <Breadcrumb>
+            <Breadcrumb.Item href="/welcome">Home</Breadcrumb.Item>
             <Breadcrumb.Item href="/stories">Stories</Breadcrumb.Item>
             <Breadcrumb.Item href="/account">Account</Breadcrumb.Item>
-          </Breadcrumb>
+          </Breadcrumb> */}
         </Container>
       </Navbar>
       
       <Router>
           <Switch>
-            <Route exact path="/welcome" Component={<Home/>} />
-            <Route exact path="/stories" Component={<Stories/>} />
-            <Route exact path="/account" Component={<Account/>} />
+            <Route exact path="/welcome" Component={Home} />
+            <Route exact path="/stories" Component={Stories} />
+            <Route exact path="/account" Component={Account} />
           </Switch>
       </Router>
       </>
