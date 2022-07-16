@@ -57,14 +57,12 @@ function App() {
       <div>
         Hiiii!!
       </div>
-      <Router>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/stories/' element={<Stories />} />
           <Route path='/account/' element={<Account />} />
           <Route path='/*' element={<Notfound />} />
         </Routes>
-      </Router>
     </>
   );
 }
