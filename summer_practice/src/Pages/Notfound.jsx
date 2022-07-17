@@ -2,10 +2,10 @@ import { Link } from "react-router-dom"
 
 const Notfound = () => {
     return(
-      <div>
+      <div class='notfound-bd'>
         <h1>Мне кажется ты потерялся.</h1>
         <p>Попробуешь вернуться на главную страницу?</p>
-        <Link to="/">Home</Link>
+        <Link to="/welcome">Home</Link>
       </div>
     )
   }

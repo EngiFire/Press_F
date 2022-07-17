@@ -1,6 +1,6 @@
 const Account = () =>{
     return(
-      <div>
+      <div class='account-bd'>
         <h1>Ваш аккаунт.</h1>
         <p>Хммм, а где же он?</p>
       </div>

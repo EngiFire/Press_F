@@ -36,42 +36,22 @@
 //   );
 // }
 
-import { Routes, Route, Link } from 'react-router-dom';
-import { Container, Navbar, NavbarBrand, Nav} from 'react-bootstrap';
+import { Routes, Route } from 'react-router-dom';
 
 import {Home} from './Pages/Home';
 import {Stories} from './Pages/Stories';
 import {Account} from './Pages/Account';
 import { Notfound } from './Pages/Notfound';
 
-import logo from './Components/logo1.png';
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
 function App() {
   return (
     <>
     <div class='wrapper'>
-      <div id="rectangle"></div>
-      <div class="header">
-        <NavbarBrand href='/welcome'>
-          <img class='logo'
-            src={logo}
-            alt='Logo' 
-          />
-        </NavbarBrand>
-          {/* <div class="burger-menu">
-              <div class="nav-burger"><a href="#about">О салоне</a></div>
-              <div class="nav-burger">Цены</div>
-              <div class="nav-burger">Контакты</div>
-            </div> */}
-        <div class="nav-menu">
-            <div class="nav-item"><Link to='/welcome'>Home</Link></div>
-            <div class="nav-item"><Link to='/stories'>Stories</Link></div>
-            <div class="nav-item"><Link to='/account'>Account</Link></div>
-            {/* <div class="nav-open">
-                <img style="width: 30px" src="./menu.png" alt="" srcset=""  draggable="false" />
-            </div> */}
-        </div>
-      </div>
+
+      <Header/>
 
       <div class='content'>
         <Routes>
@@ -81,6 +61,9 @@ function App() {
           <Route path='/*' element={<Notfound />} />
         </Routes>
       </div>
+
+      <Footer/>
+
     </div>
     </>
   );
