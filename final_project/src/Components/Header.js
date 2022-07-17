@@ -34,13 +34,13 @@ export default class Header extends Component {
         </Container>
       </Navbar>
       
-      <Router>
+      {/* <Router>
           <Switch>
             <Route exact path="/welcome" Component={Home} />
             <Route exact path="/stories" Component={Stories} />
             <Route exact path="/account" Component={Account} />
           </Switch>
-      </Router>
+      </Router> */}
       </>
     )
   }
