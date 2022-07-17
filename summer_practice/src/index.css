@@ -152,7 +152,7 @@ body{
 /* HOME */
 
 .home-bd {
-  height: 1100px;
+  height: 1150px;
 }
 
 .home-bg {
@@ -185,16 +185,18 @@ body{
 .bigger{
 font-size: 20px;
 font-weight: bolder;
-padding-top: 15px;
+padding-top: 25px;
 }
 
 ol{
   font-size: 22px;
   margin-left: 30px;
+  padding-top: 20px;
 }
 
 li{
   margin-top: 12px;
+  padding-top: 10px;
 }
 
 /* STORIES */
