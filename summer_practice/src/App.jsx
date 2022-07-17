@@ -36,7 +36,7 @@
 //   );
 // }
 
-import { Routes, Route, Link, Router } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 
 import {Home} from './Pages/Home';
 import {Stories} from './Pages/Stories';
@@ -57,12 +57,12 @@ function App() {
       <div>
         Hiiii!!
       </div>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/stories/' element={<Stories />} />
-          <Route path='/account/' element={<Account />} />
-          <Route path='/*' element={<Notfound />} />
-        </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/stories/' element={<Stories />} />
+        <Route path='/account/' element={<Account />} />
+        <Route path='/*' element={<Notfound />} />
+      </Routes>
     </>
   );
 }
