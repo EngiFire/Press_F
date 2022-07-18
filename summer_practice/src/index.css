@@ -79,7 +79,7 @@ table {
 }
 
 .header {
-  width: 1450px;
+  /* width: 1450px; */
   height: 70px;
   background: #f8dc94;
   border-radius: 10px;
@@ -89,7 +89,8 @@ table {
   position: sticky;
   z-index: 3;
   top: 10px;
-  left: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
   font-family: 'Fredoka One', cursive;
   font-weight: bolder;
 }
@@ -223,6 +224,16 @@ li{
   width: 935px;
 }
 
+.n{
+  text-decoration: none;
+  color: white;
+}
+
+.n:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .article-title{
   padding-left: 550px;
   padding-bottom: 20px;
@@ -294,10 +305,68 @@ li{
   font-family: 'Montserrat', sans-serif;
 }
 
+/* SOCIALS */
+
+.socials-bd{
+  height: 710px;
+  margin-left: 120px;
+  margin-right: 120px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.social-title{
+  margin-left: 60px;
+}
+
+.cont-card{
+  margin-top: 30px;
+}
+
+.cont{
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
 /* NOTFOUND */
 
 .notfound-bd {
   height: 510px;
   margin-left: 70px;
   margin-right: 70px;
+}
+
+.cow-level-bd{
+  height: 510px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.cow-level-bg{
+  background-image: url(./Assets/img4.png);
+  background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 900px;
+  width: 1550px;
+  background-repeat: no-repeat;
+  z-index: 4;
+}
+
+.logocow{
+  height: 120px;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+
+.text-cow{
+  color: #970504;
+  margin-top: 400px;
+  margin-left: 70px;
+  font-family: 'Fredoka One', cursive;
+  font-weight: bolder;
+}
+
+.text-cow-little{
+  margin-left: 450px;
 }
