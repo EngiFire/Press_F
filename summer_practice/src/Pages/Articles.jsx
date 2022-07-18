@@ -1,11 +1,13 @@
-import UncontrolledExample from "../Components/Carousel"
+import Slider from "../Components/Carousel";
+import GridExample from '../Components/Cards';
 
 const Articles = () => {
     return (
         <div class='articles-bd'>
-        <h1>Всякие полезные статьи и ссылки.</h1>
-        <p>Вдруг кому понадобиться...</p>
-        <UncontrolledExample/>
+            <div class='article-title'><h3>Свежие обновления!</h3></div>
+            <Slider />
+            <div class='article-cont'>Полезные статьи</div>
+            <GridExample/>
         </div>
     )
 }

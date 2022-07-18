@@ -3,7 +3,7 @@ const Home = () =>{
     <div class='home-bd'>
       <div class="home-bg">
         <div class="home-bg-text">
-            Приветствуем вас на D20Stories!
+            <a href='#about'>Приветствуем вас на D20Stories!</a>
         </div>
       </div>
       <div id="about">

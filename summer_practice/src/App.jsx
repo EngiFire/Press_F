@@ -43,6 +43,7 @@ import {Articles} from './Pages/Articles';
 import {Stories} from './Pages/Stories';
 import {Account} from './Pages/Account';
 import {Notfound} from './Pages/Notfound';
+import {Advice} from './Pages/Advice.jsx';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -50,6 +51,8 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
+      <div class='wrapper'>
+
       <Header/>
 
       <div class='content'>
@@ -57,12 +60,15 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/articles' element={<Articles />} />
           <Route path='/stories/' element={<Stories />} />
+          <Route path='/advice' element={<Advice />} />
           <Route path='/account/' element={<Account />} />
           <Route path='/notfound' element={<Notfound />} />
         </Routes>
       </div>
 
       <Footer/>
+
+      </div>
     </>
   );
 }
