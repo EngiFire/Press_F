@@ -39,9 +39,10 @@
 import { Routes, Route } from 'react-router-dom';
 
 import {Home} from './Pages/Home';
+import {Articles} from './Pages/Articles';
 import {Stories} from './Pages/Stories';
 import {Account} from './Pages/Account';
-import { Notfound } from './Pages/Notfound';
+import {Notfound} from './Pages/Notfound';
 
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -49,22 +50,19 @@ import Footer from './Components/Footer';
 function App() {
   return (
     <>
-    <div class='wrapper'>
-
       <Header/>
 
       <div class='content'>
         <Routes>
-          <Route path='/welcome' element={<Home />} />
+          <Route path='/' element={<Home />} />
+          <Route path='/articles' element={<Articles />} />
           <Route path='/stories/' element={<Stories />} />
           <Route path='/account/' element={<Account />} />
-          <Route path='/*' element={<Notfound />} />
+          <Route path='/notfound' element={<Notfound />} />
         </Routes>
       </div>
 
       <Footer/>
-
-    </div>
     </>
   );
 }

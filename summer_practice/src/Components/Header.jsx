@@ -10,14 +10,15 @@ export default class Header extends Component {
         <>
         <div id="rectangle"></div>
         <div class="header">
-          <NavbarBrand href='/welcome'>
+          <NavbarBrand href='/'>
             <img class='logo'
               src={logo}
               alt='Logo' 
             />
           </NavbarBrand>
           <div class="nav-menu">
-              <div class="nav-item"><Link to='/welcome'>Home</Link></div>
+              <div class="nav-item"><Link to='/'>Home</Link></div>
+              <div class="nav-item"><Link to='/articles'>Articles</Link></div>
               <div class="nav-item"><Link to='/stories'>Stories</Link></div>
               <div class="nav-item"><Link to='/account'>Account</Link></div>
           </div>
