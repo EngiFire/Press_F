@@ -70,7 +70,7 @@ table {
 }
 
 #rectangle {
-  width: 1535px;
+  width: 1920px;
   height: 90px;
   background: #cfb8b4;
   position: fixed;
@@ -148,7 +148,6 @@ table {
 
 /* HOME */
 
-
 .home-bg-text a{
   text-decoration: none;
   color: darkslategrey;
@@ -159,7 +158,7 @@ table {
 }
 
 .home-bd {
-  height: 1165px;
+  height: 1180px;
   margin-left: 70px;
   margin-right: 70px;
   font-family: 'Montserrat', sans-serif;
@@ -347,8 +346,8 @@ li{
   position: fixed;
   left: 0;
   top: 0;
-  height: 900px;
-  width: 1550px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   z-index: 4;
 }
