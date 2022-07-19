@@ -308,7 +308,7 @@ li{
 /* SOCIALS */
 
 .socials-bd{
-  height: 710px;
+  height: 620px;
   margin-left: 120px;
   margin-right: 120px;
   font-family: 'Montserrat', sans-serif;
@@ -323,7 +323,7 @@ li{
 }
 
 .cont{
-  margin-top: 30px;
+  margin-top: 70px;
   margin-left: 40px;
 }
 
@@ -369,4 +369,8 @@ li{
 
 .text-cow-little{
   margin-left: 450px;
+}
+
+.error{
+  margin-left: 420px;
 }
